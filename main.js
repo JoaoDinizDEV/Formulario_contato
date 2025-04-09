@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let numeroLimpo = numero.replace(/\D/g, "");
 
         if (nome === "" || numero === "") {
-            alert("Campos incorretos, preencha novamente.");
+            alert("Dados incorretos, preencha novamente.");
             return;
         }
 
