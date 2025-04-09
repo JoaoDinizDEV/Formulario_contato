@@ -2,64 +2,67 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Bungee", sans-serif;
 }
 
 body {
-    background-color: burlywood;
+    background-color: #fff;
     padding-top: 100px;
 }
 
 header {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
+
+
 
 header h1 {
     font-size: 40px;
     font-weight: bold;
 }
 
-.conteiner {
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-
+.container {
+    max-width: 960px;
+    width: 100%; 
+    margin: 0 auto; 
 }
 
-form{
-    display: flex;
-    max-width: 640px;    
+form {
+    display: flex; 
+    max-width: 640px;
     width: 100%;
     justify-content: space-between;
     margin-bottom: 56px;
-
 }
 
+#nome-cadastro {
+    margin-right: 30px;
+}
 
-form input{
-    font-size: 24px;
-    background-color: #FFF;
-    border: none;
-    border-bottom: 2px solid #000;
+#numero-cadastro {
+    margin-right: 30px;
+}
+
+form input {
+    font-size: 18px;
+    background-color: #fff;
+    border: 1px solid #000;
     padding: 8px;
-
 }
 
-
-form button{
-    background-color: #009432;
-    color: #FFF;
-    font-size: 24px;
-    font-weight: bold;
-    border: none;
+#botao-adicionar {
+    background-color: paleturquoise;
+    color: #fff;
+    font-size: 20px;
     cursor: pointer;
     padding: 8px;
+    border: 1px solid #000;
 }
 
 table {
-    width: 100%;
+    border-spacing: 0;
 }
 
 table th {
@@ -76,22 +79,7 @@ table td {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-table td img {
-    height: 30px;
-}
 
-.resultado {
-    padding: 8px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #000;
-    border-radius: 3px;
-}
-
-.Aprovado {
-    background-color: #009432;
-}
-
-.Reprovado {
-    background-color: red;
+.espaco { 
+    margin-left: 4px;
 }

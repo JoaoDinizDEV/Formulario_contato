@@ -3,33 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda online</title>
+    <title>Agenda Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <div class="conteiner">
+    <div class="container">
         <header>
-            <h1>Agenda digital EBAC</h1>
+            <h1>Agenda Digital EBAC</h1>
         </header>
-    <form>
-        <input type="text" required placeholder="Nome">
-        <input type="number" required placeholder="Contato" min="0" max="11">
-        <button type="submit">Adicionar contato</button>
-    </form>
-    <table>
-        <thead>
-            <th>
-            Nome do contato
-            </th>
-            <th>
-            Telefone
-            </th>
-        </thead>
-    </table>
-    <tbody>
-        <tr>--</tr>
-        <tr>--</tr>
-    </tbody>
+        <form id="form-cadastro">
+            <input type="text" id="nome-cadastro" required placeholder="Nome contato" />
+            <input type="number" id="numero-cadastro" required placeholder="()Telefone" />
+            <button type="submit" id="botao-adicionar">Adicionar</button>
+        </form>
+        <table> 
+            <thead> 
+                <tr> 
+                    <th> 
+                        Nome cadastrado
+                    </th>
+                    <th>Contato cadastrado</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-cadastro">
+            <tfoot>
+                <tr>
+                </tr>
+            </tfoot>
+        </table>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
